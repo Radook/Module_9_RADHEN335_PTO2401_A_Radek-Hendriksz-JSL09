@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-}    
+}
 
 body {
     margin: 0;
@@ -69,4 +69,9 @@ p.weather-temp {
     margin: 0;
     font-size: 1.7rem;
     margin-left: -10px;
+}
+
+div.bottom {
+    display: flex;
+    justify-content: space-between;
 }
