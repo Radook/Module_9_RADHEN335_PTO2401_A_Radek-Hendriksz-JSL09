@@ -3,7 +3,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
     .then(res => res.json())
     .then(data => {
         console.log(data.urls.regular)
-        document.body.style.backgroundImage = `url(${data.urls.regular})`
+        document.body.style.backgroundImage = `url(${data.urls.full})`
         document.getElementById("author").textContent = `By: ${data.user.name}`
     })
     .catch(err => {
@@ -11,7 +11,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         document.getElementById("author").textContent = `By: ${data.user.name}`
     })
 
-fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
+fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
     .then(res => {
         if (!res.ok) {
             throw Error("Something went wrong")
